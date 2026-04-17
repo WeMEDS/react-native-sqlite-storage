@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.source_files   = "platforms/ios/*.{h,m}"
 
   s.dependency 'React-Core'
-  s.library = 'sqlite3'
+  s.dependency 'SQLCipher', '~> 4.6.1'
+  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLCIPHER=1' }
 end
