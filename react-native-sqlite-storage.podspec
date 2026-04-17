@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'React-Core'
   s.dependency 'SQLCipher', '~> 4.6.1'
-  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLCIPHER=1' }
+  s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLCIPHER=1' }
 end
