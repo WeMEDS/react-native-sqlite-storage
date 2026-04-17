@@ -32,7 +32,11 @@
  * See http://opensource.org/licenses/alphabetical for full text.
  */
 
+#ifdef SQLCIPHER
+#import <SQLCipher/sqlite3.h>
+#else
 #import "sqlite3.h"
+#endif
 
 #include <regex.h>
 
